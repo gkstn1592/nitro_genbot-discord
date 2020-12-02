@@ -13,7 +13,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print("봇이 성공적으로 실행되었습니다.")
-    game = discord.Game('★~하는중에 표시될 네임 작성★')
+    game = discord.Game('★니트로 뽑는중~★')
     await client.change_presence(status=discord.Status.online, activity=game)
 
 
@@ -26,4 +26,4 @@ async def on_message(message):
             NitroEmbed = discord.Embed(title='니트로 생성기', description='https://discord.gift/' + ranNitro)
         await message.channel.send(embed=NitroEmbed)
         
-client.run('★TOKEN★')
+client.run('NzgzNjkxNjI1NTMxNzAzMjk2.X8ebsw.6_Wj_b-Qp0ByMms5KLZ0_EMB-aE')
